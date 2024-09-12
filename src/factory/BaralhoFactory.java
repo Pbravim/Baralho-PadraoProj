@@ -25,6 +25,6 @@ public class BaralhoFactory implements BaralhoFactoryInterface {
         director = new Director(builder);
         director.setBuilder(builder);
 
-        return director.makeBaralho();
+        return director.makeBaralho(tipo);
     }
 }

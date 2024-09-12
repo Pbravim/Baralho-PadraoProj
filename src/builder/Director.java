@@ -13,10 +13,13 @@ public class Director {
         this.builder = builder;
     }
 
-    public Baralho makeBaralho() {
+    public Baralho makeBaralho(String tipo) {
         builder.reset();
         builder.addCartasPadrao();
-        builder.addCartasEspeciais();
+        if (!tipo.equals("tradicional")){
+            builder.addCartasEspeciais();
+        }
+
         return builder.getResult();
     }
 }

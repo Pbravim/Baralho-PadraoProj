@@ -19,7 +19,6 @@ public class TradicionalBuilder implements BaralhoBuilderInterface {
         for (int i = 0; i < faces.length; i++) {
             for (int j = 0; j < naipes.length; j++) {
                 int valor = i + 1;
-
                 baralho.adicionarCarta(new Carta(faces[i], naipes[j], valor, naipes[j] == "\u2665" || naipes[j] == "\u2666" ? Cor.VERMELHO: Cor.PRETO ));
             }
         }
