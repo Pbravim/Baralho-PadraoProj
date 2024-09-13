@@ -4,5 +4,5 @@ package factory;
 import baralho.Baralho;
 
 public interface BaralhoFactoryInterface {
-    Baralho criarBaralho();
+    Baralho criarBaralho(String tipo);
 }
