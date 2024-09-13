@@ -6,7 +6,6 @@ import baralho.Cor;
 
 public class UnoBuilder implements BaralhoBuilderInterface {
     private Baralho baralho;
-    private Cor[] cores = {Cor.VERMELHO, Cor.VERDE, Cor.AZUL, Cor.AMARELO };
 
     @Override
     public void reset() {
@@ -15,16 +14,17 @@ public class UnoBuilder implements BaralhoBuilderInterface {
     }
 
     @Override
-    public void addCartasPadrao() {
+    public void addCartas() {
+        Cor[] cores = {Cor.VERMELHO, Cor.VERDE, Cor.AZUL, Cor.AMARELO };
+
+
         for (Cor cor : cores) {
             for (int i = 0; i <= 9; i++) {
                 baralho.adicionarCarta(new Carta(Integer.toString(i), cor.getValue(), i, cor));
                 baralho.adicionarCarta(new Carta(Integer.toString(i), cor.getValue(), i, cor));
             }
         }
-    }
-    @Override
-    public void addCartasEspeciais() {
+
         for (Cor cor : cores) {
             for (int i = 0; i < 2; i++) {
                 baralho.adicionarCarta(new Carta("Compre 2", cor.getValue(), 20, cor));

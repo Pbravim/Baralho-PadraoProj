@@ -4,7 +4,6 @@ import baralho.Baralho;
 
 public interface BaralhoBuilderInterface {
     void reset();
-    void addCartasPadrao();
-    void addCartasEspeciais();
+    void addCartas();
     Baralho getResult();
 }

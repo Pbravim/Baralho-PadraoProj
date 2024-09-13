@@ -11,7 +11,7 @@ public class TradicionalBuilder implements BaralhoBuilderInterface {
     }
 
     @Override
-    public void addCartasPadrao() {
+    public void addCartas() {
         String faces[] = { "As", "2", "3", "4", "5", "6",
                 "7", "8", "9", "10", "Valete", "Dama", "Rei" };
         String naipes[] = { "\u2665", "\u2666", "\u2663", "\u2660" };
@@ -25,8 +25,6 @@ public class TradicionalBuilder implements BaralhoBuilderInterface {
 
     }
 
-    public void addCartasEspeciais() {
-    }
 
     @Override
     public Baralho getResult() {

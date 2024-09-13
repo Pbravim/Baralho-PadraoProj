@@ -13,12 +13,9 @@ public class Director {
         this.builder = builder;
     }
 
-    public Baralho makeBaralho(String tipo) {
+    public Baralho makeBaralho() {
         builder.reset();
-        builder.addCartasPadrao();
-        if (!tipo.equals("tradicional")){
-            builder.addCartasEspeciais();
-        }
+        builder.addCartas();
 
         return builder.getResult();
     }
