@@ -34,11 +34,11 @@ public class UnoBuilder implements BaralhoBuilderInterface {
         }
 
         for (int i = 0; i < 4; i++) {
-            // baralho.adicionarCarta(new CartaUno("Curinga", "preto", 50));
-            // baralho.adicionarCarta(new CartaUno("Compre 4", "preto", 50));
+             baralho.adicionarCarta(new CartaUno("Curinga", 50, cores));
+             baralho.adicionarCarta(new CartaUno("Compre 4", 50, cores));
         }
 
-        // baralho.adicionarCarta(new Carta("Trocar as Mãos", "preto", 50));
+         baralho.adicionarCarta(new CartaUno("Trocar as Mãos", 50, cores));
     }
 
     @Override

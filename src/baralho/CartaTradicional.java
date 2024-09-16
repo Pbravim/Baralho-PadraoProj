@@ -15,7 +15,7 @@ public class CartaTradicional extends Carta {
     @Override
     public String toString(){
     
-        return String.format("%6s", this.getFace()) + " " + this.getCor().ansiCode() + naipe + Cor.RESET.ansiCode() + ", valor " + this.getValor();
+        return String.format("%6s", this.getFace()) + " " + this.getCor()[0].ansiCode() + naipe + Cor.RESET.ansiCode() + ", valor " + this.getValor();
     } // fim do m�todo toString
 
 }
