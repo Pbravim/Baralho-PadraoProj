@@ -3,9 +3,7 @@ import factory.BaralhoFactory;
 
 public class Main {
     public static void main(String[] args) {
-        BaralhoFactory factory = new BaralhoFactory();
-
-        Baralho baralhoUno = factory.criarBaralho("uno");
+        Baralho baralhoUno = BaralhoFactory.criarBaralho("uno");
         System.out.println("Baralho UNO - Tamanho: " + baralhoUno.size());
         System.out.println(baralhoUno);
 
@@ -23,7 +21,7 @@ public class Main {
         // Exibir o tamanho do baralho UNO após a distribuição
         System.out.println("\nTamanho do baralho UNO após distribuição: " + baralhoUno.size());
 
-        Baralho baralhoTradicional = factory.criarBaralho("tradicional");
+        Baralho baralhoTradicional = BaralhoFactory.criarBaralho("tradicional");
         System.out.println("\nBaralho Tradicional - Tamanho: " + baralhoTradicional.size());
         System.out.println(baralhoTradicional);
 
